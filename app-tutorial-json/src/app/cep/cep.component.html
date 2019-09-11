@@ -1,0 +1,78 @@
+<div class="container">
+    <div class="panel panel-default">
+      
+  
+       <div class="panel-body">
+          <div class="col-lg-12">
+            <div class="col-lg-3 form-group">
+              <div class="col-lg-12 form-group">
+                <label>Digite seu CEP</label>
+                <input id="CEP" type="text" size="9" maxlength="9" class="form-control"[(ngModel)]="cep.cep" />
+              </div>
+  
+              <div class="col-lg-12 form-group">
+                <input id="btnFrete" value="Buscar" class="btn btn-primary form-control" type="submit" (click)='buscar()'  />   
+              </div>
+  
+              <div class="col-lg-12 form-group">
+                <a href="http://www.buscacep.correios.com.br/servicos/dnec/index.do" title="Não sei meu CEP" target="_blank" class="link">Não sei meu CEP</a>                     
+              </div>                                    
+            </div>
+            <!-- teste -->
+            <div class="col-lg-3 form-group">
+              <div class="col-lg-12 form-group">
+                <label>Logradouro</label>
+                <input id="logradouro" type="text" size="9" maxlength="9" class="form-control" placeholder="Logradouro" [(ngModel)]="cep.logradouro"/>
+              </div>
+                               
+            </div>
+  
+            <div class="col-lg-3 form-group">
+              <div class="col-lg-12 form-group">
+                <label>Número</label>
+                <input id="numero" type="text" size="9" maxlength="9" class="form-control" placeholder="numero" [(ngModel)]="cep.numero"/>
+              </div>
+                               
+            </div>
+  
+            <div class="col-lg-3 form-group">
+              <div class="col-lg-12 form-group">
+                <label>Complemento</label>
+                <input id="complemento" type="text" size="9" maxlength="9" class="form-control" placeholder="complemento" [(ngModel)]="cep.complemento"/>
+              </div>
+                               
+            </div>
+            <div class="col-lg-3 form-group">
+              <div class="col-lg-12 form-group">
+                <label>Cidade</label>
+                <input id="cidade" type="text" size="9" maxlength="9" class="form-control" placeholder="cidade" [(ngModel)]="cep.cidade"/>
+              </div>
+                               
+            </div>
+            <div class="col-lg-3 form-group">
+              <div class="col-lg-12 form-group">
+                <label>Bairro</label>
+                <input id="bairro" type="text" size="9" maxlength="9" class="form-control" placeholder="Bairro" [(ngModel)]="cep.bairro"/>
+              </div>
+                               
+            </div>
+            <div class="col-lg-3 form-group">
+              <div class="col-lg-12 form-group">
+                <label>Estado</label>
+                <input id="estado" type="text" size="9" maxlength="9" class="form-control" placeholder="Estado" [(ngModel)]="cep.estado"/>
+              </div>
+                               
+            </div>
+            <!-- teste -->
+  
+  
+            
+        </div>
+       </div>
+  
+       <div class="panel-footer">
+          <p>Teste</p>
+       </div>
+  
+    </div>
+  </div>
