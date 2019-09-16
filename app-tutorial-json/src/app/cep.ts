@@ -3,7 +3,7 @@ export class Cep{
     logradouro:string;
     numero:string;
     complemento:string;
-    cidade:string;
+    localidade:string;
     bairro:string;
-    estado:string;
+    uf:string;
 }

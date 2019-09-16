@@ -1,11 +1,14 @@
+
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import{HttpClientModule} from '@angular/common/http';
-
+import{FormsModule} from '@angular/forms';
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FormsModule } from '@angular/forms';
-import { CepComponent } from './cep/cep.component';
+import {HttpClientModule} from '@angular/common/http';
 import {CepService} from './cep.service';
+import { CepComponent } from './cep/cep.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -13,6 +16,7 @@ import {CepService} from './cep.service';
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     FormsModule,
     HttpClientModule
   ],

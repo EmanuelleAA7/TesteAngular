@@ -1,27 +1,24 @@
-import { Injectable } from '@angular/core';
-import {HttpClient} from '@angular/common/http';
-// import 'rxjs/add/operator/map';
-// import 'rxjs/add/operator/toPromise';
+import{Injectable} from '@angular/core';
+import {Observable} from 'rxjs';
+import {HttpClient, HttpParams} from '@angular/common/http';
+import {CepComponent} from './cep/cep.component';
+@Injectable()
+export class CepService
+{
+    
 
-@Injectable({
-  providedIn: 'root'
-})
-export class CepService {
+    constructor(private httpClient: HttpClient){}
 
-  // cepUrl = 'https://viacep.com.br/ws/{cep}/json/';
 
-  constructor(private http:HttpClient) { }
+    buscar(cep):Observable<any>{
+        debugger
+     
+        
+        return this.httpClient.get(`https://viacep.com.br/ws/${cep.cep}/json/`);
+        // return this.httpClient.get(`https://viacep.com.br/ws/09530530/json/`);
+        debugger
+        // return teste;
 
-  buscar(cep:string){
-      this.http.get(`https://viacep.com.br/ws/{cep}/json/`)
-      .toPromise()
-      .then(response => {
-        console.log(response);
-      })
- 
     }
-  // buscar(){
-  // return this.http.get(`${this.cepUrl}`); 
-  // }
 
 }

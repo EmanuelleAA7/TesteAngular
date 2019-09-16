@@ -6,23 +6,28 @@
           <div class="col-lg-12">
             <div class="col-lg-3 form-group">
               <div class="col-lg-12 form-group">
+
+                <!-- <h1> {{cep|json}}</h1> -->
                 <label>Digite seu CEP</label>
-                <input id="CEP" type="text" size="9" maxlength="9" class="form-control"[(ngModel)]="cep.cep" />
+               
+                <input id="cep" type="text" size="9" maxlength="9" class="form-control"[(ngModel)]="cep.cep" />
               </div>
   
               <div class="col-lg-12 form-group">
-                <input id="btnFrete" value="Buscar" class="btn btn-primary form-control" type="submit" (click)='buscar()'  />   
+                <input id="btnFrete" value="Buscar" class="btn btn-primary form-control"  (click)="carregar()" />   
               </div>
   
               <div class="col-lg-12 form-group">
-                <a href="http://www.buscacep.correios.com.br/servicos/dnec/index.do" title="Não sei meu CEP" target="_blank" class="link">Não sei meu CEP</a>                     
+                <a href="http://www.buscacep.correios.com.br/servicos/dnec/index.do" title="Não sei meu CEP" target="_blank" 
+                class="link">Não sei meu CEP</a>                     
               </div>                                    
             </div>
             <!-- teste -->
             <div class="col-lg-3 form-group">
               <div class="col-lg-12 form-group">
                 <label>Logradouro</label>
-                <input id="logradouro" type="text" size="9" maxlength="9" class="form-control" placeholder="Logradouro" [(ngModel)]="cep.logradouro"/>
+                <input id="logradouro" type="text" size="9" maxlength="9" class="form-control" placeholder="Logradouro"
+                 [(ngModel)]="cep.logradouro"/>
               </div>
                                
             </div>
@@ -45,7 +50,7 @@
             <div class="col-lg-3 form-group">
               <div class="col-lg-12 form-group">
                 <label>Cidade</label>
-                <input id="cidade" type="text" size="9" maxlength="9" class="form-control" placeholder="cidade" [(ngModel)]="cep.cidade"/>
+                <input id="cidade" type="text" size="9" maxlength="9" class="form-control" placeholder="cidade" [(ngModel)]="cep.localidade"/>
               </div>
                                
             </div>
@@ -59,7 +64,7 @@
             <div class="col-lg-3 form-group">
               <div class="col-lg-12 form-group">
                 <label>Estado</label>
-                <input id="estado" type="text" size="9" maxlength="9" class="form-control" placeholder="Estado" [(ngModel)]="cep.estado"/>
+                <input id="estado" type="text" size="9" maxlength="9" class="form-control" placeholder="Estado" [(ngModel)]="cep.uf"/>
               </div>
                                
             </div>
