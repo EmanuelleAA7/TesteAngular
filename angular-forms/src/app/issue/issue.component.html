@@ -1,0 +1,21 @@
+
+
+<div class="container" style="margin-left: 27%"> 
+
+    <h1 >Gmuds</h1> <br>
+   
+   
+    <form (ngSubmit)="onSubmit()" #issueForm="ngForm"> <div style="width: 50% " >
+   
+      <div class="form-group">
+        <label for="username">Indique o código de sua Issue:</label>
+        <input type="text" class="form-control" id="issue"  required  >
+     
+      </div>
+
+    
+
+      <button type="submit" class="btn btn-success" [disabled]="!issueForm.form.valid">Enviar</button>
+    </div>
+    </form>
+</div>

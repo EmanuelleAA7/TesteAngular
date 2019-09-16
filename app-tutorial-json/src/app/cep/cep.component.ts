@@ -16,6 +16,7 @@ export class CepComponent implements OnInit {
   }
   
   cep = new Cep()
+  
 
   ngOnInit(){
     
